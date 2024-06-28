@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    background: #030020;
+    color: white;
+}
+
+/* Navigation Bar */
+nav{
+    display: flex;
+    font-size: small;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    background-color: #110d42;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(120, 50, 199);
+}
+.left {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    padding-top: 40px;
+}
+.about > div{
+    width: 30%;
+}
+.leftSection{
+    /* background-color: red; */
+    font-size: 2rem;
+    margin: 50px 0;
+}
+.rightSection img{
+    width: 90%;
+    filter: drop-shadow(5px 5px 50px rgb(120, 50, 199));
+}
+
+/* Experience Section */
+.experience .box {
+    display: flex;
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+}
+.experience .vertical {
+    background: white;
+    width: 1px;
+    height: 60px;
+    margin: 0px 93px;
+}
+.image-top{
+    width: 33px;
+    position: relative;
+    top: -38px;
+    left: -17px;
+}
+.image-top:hover{
+    filter: drop-shadow(2px 2px 10px rgb(120, 50, 199));
+}
+.vertical-title{
+    width: 140px;
+    position: relative;
+    font-size: 15px;
+    top: 20px;
+    left: -40px;
+}
+.vertical-desc{
+    position: relative;
+    top: 20px;
+    left: -40px;
+    color: gray;
+    width: 140px;
+    font-size: 9px;
+}
+
+/* Contact Section  */
+.contactSection {
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contactSection form input, textarea{
+    padding: 2px 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #110d42;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.socials{
+    height: 40px;
+    padding-top: 15px;
+}
+.socials ul{
+    display: flex;
+    list-style: none;
+}
+.socials ul li{
+    margin: 5px 30px;
+}
+.socials img{
+    width: 25px;
+}
+.socials img:hover{
+    filter: drop-shadow(2px 2px 4px rgb(120, 50, 199));
+}
+
+/* Academics Section  */
+.academics table{
+    width: 90%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: 20px;
+    height: 72%;
+    text-align: center;
+}
+.academics table, td{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.even {
+    background: #310b6b;
+}
+.odd {
+    background: #4e13a7;
+}

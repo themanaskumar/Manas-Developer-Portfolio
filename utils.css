@@ -1,0 +1,90 @@
+.custom-btn
+{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 10px;
+    margin-left: 140px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-1{
+    background: rgb(61, 9, 120);
+    background: linear-gradient(0deg, rgba(141, 55, 245) 0%, rgb(43, 4, 87) 100%);
+    border: none;
+}
+.btn-1:hover{
+    background: rgb(61, 9, 120);
+    background: linear-gradient(0deg, rgb(43, 4, 87) 0%, rgb(141, 55, 245) 100%);
+}
+
+
+.purple{
+    color: rgb(120, 50, 199);
+    font-weight: 800;
+}
+
+#element{
+    color: rgb(120, 50, 199);
+}
+
+.text-gray {
+    font-size: 0.6rem;
+    color: gray;
+}
+
+main hr {
+    border: 0;
+    background: rgb(120, 50, 199);
+    height: 1px;
+    margin: 20px 50px;
+}
+
+.experience, .services, .projects, .academics {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    padding-top: 25px;
+}
+
+/* Scrollbar Design */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #8d83fc;
+    border-radius: 2px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #191359;
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #030020;
+    cursor: grab;
+  }
+  ::-webkit-scrollbar-button{
+    background: #191359;
+  }
+  ::-webkit-scrollbar-button:hover{
+    background: #030020;
+  }
+  ::-webkit-scrollbar-corner {
+    background: #8d83fc;
+  }
