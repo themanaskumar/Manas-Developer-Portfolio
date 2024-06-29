@@ -213,13 +213,15 @@
                 <div>
                     <h1><span class="purple">Contact</span> Me</h1>
                 </div>
-                <form id="messageForm">
+                <form id="messageForm" action="https://formspree.io/f/mqazkzww" method="post">
                     <div>
                         <div><label for="name">Name: </label></div>
                         <input id="name" type="text" placeholder="Name" name="name" autocomplete="name">
                     </div>
                     <div>
                         <div><label for="message">Message: </label></div>
+                        <div><span class="text-gray">(Please do provide some contact info with your message so that I
+                                can contact you after getting your message.)</span></div>
                         <textarea name="message" id="message" rows="10" cols="40" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="custom-btn btn-1" formmethod="post">Submit</button>
@@ -248,27 +250,6 @@
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        document.getElementById('messageForm').addEventListener('submit', async function (event) {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const message = document.getElementById('message').value;
-
-            const response = await fetch('/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, message })
-            });
-
-            if (response.ok) {
-                alert('Message saved successfully!');
-            } else {
-                alert('Failed to save message.');
-            }
-        });
-
         // Typing animation
         var typed = new Typed('#element', {
             strings: ['Data Analyst.', 'Web Developer.'],
