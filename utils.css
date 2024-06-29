@@ -10,7 +10,7 @@
     transition: all 0.3s ease;
     position: relative;
     margin: 10px;
-    margin-left: 140px;
+    margin-left: 195px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
     7px 7px 20px 0px rgba(0, 0, 0, .1),
     4px 4px 5px 0px rgba(0, 0, 0, .1);
@@ -49,11 +49,11 @@ main hr {
     margin: 20px 50px;
 }
 
-.experience, .services, .projects, .academics, .skills {
+.experience, .services, .projects, .academics, .skills, .contactSection {
     max-width: 80vw;
     margin: auto;
     height: 80vh;
-    padding-top: 25px;
+    padding-top: 38px;
 }
 
 /* Scrollbar Design */
@@ -87,4 +87,15 @@ main hr {
   }
   ::-webkit-scrollbar-corner {
     background: #8d83fc;
+  }
+  @media only screen and (max-width: 750px) {
+    main hr{
+      margin: 20px;
+    }
+    .experience, .services, .projects, .academics, .skills {
+      max-width: 80vw;
+      margin: auto;
+      height: 70vh;
+      padding-top: 5px;
+  }
   }
