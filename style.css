@@ -262,10 +262,10 @@ nav ul li a:hover{
     .academics, .contactSection, .experience, .skills, .projects, .services{
         margin: 20px 0;
     }
-    .contactSection .form, .socials{
-        width: 80%;
-    }
     .contactSection .socials ul  li{
-        margin: 0 22px;
+        margin: 0 21px;
+    }
+    .contactSection form input, textarea{
+        width: 90%;
     }
   }

@@ -48,7 +48,7 @@
         <hr>
 
         <!-- Experience Section -->
-        <section class="experience" id = "experience">
+        <section class="experience" id="experience">
             <span class="text-gray">What I have done so far?</span>
             <h1><span class="purple">Work</span> Experience</h1>
 
@@ -112,15 +112,19 @@
                     <img src="Images/css.png" alt="css" height="45" class="image-top">
                     <div class="vertical-title">
                         <div class="purple">CSS</div>
-                </div>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img src="Images/js1.png" alt="js" height="45" class="image-top">
-                    <div class="vertical-title"><div class="purple">JS</div></div>
+                    <div class="vertical-title">
+                        <div class="purple">JS</div>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img src="Images/c.png" alt="c" height="45" class="image-top">
-                    <div class="vertical-title"><div class="purple">C</div></div>
+                    <div class="vertical-title">
+                        <div class="purple">C</div>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img src="Images/cpp.png" alt="c++" height="45" class="image-top">
@@ -136,19 +140,27 @@
                 </div>
                 <div class="vertical">
                     <img src="Images/python.png" alt="python" height="45" class="image-top">
-                    <div class="vertical-title"><div class="purple">Python</div></div>
+                    <div class="vertical-title">
+                        <div class="purple">Python</div>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img src="Images/dsa.png" alt="dsa" height="45" class="image-top">
-                    <div class="vertical-title"><div class="purple">DSA</div></div>
+                    <div class="vertical-title">
+                        <div class="purple">DSA</div>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img src="Images/oops.png" alt="oops" height="45" class="image-top" id="oops">
-                    <div class="vertical-title"><div class="purple">OOPs</div></div>
+                    <div class="vertical-title">
+                        <div class="purple">OOPs</div>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img src="Images/sql.png" alt="my-sql" height="45" class="image-top">
-                    <div class="vertical-title"><div class="purple">My SQL</div></div>
+                    <div class="vertical-title">
+                        <div class="purple">My SQL</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,43 +209,72 @@
 
         <!-- Contact Section -->
         <section class="contactSection" id="contact">
-            <div class="form" id="messageForm">
-                <div><h1><span class="purple">Contact</span> Me</h1></div>
-                <form action="post">
+            <div class="form">
+                <div>
+                    <h1><span class="purple">Contact</span> Me</h1>
+                </div>
+                <form id="messageForm">
                     <div>
                         <div><label for="name">Name: </label></div>
-                        <input id="name" type="text" placeholder="Name" autocomplete="name">
+                        <input id="name" type="text" placeholder="Name" name="name" autocomplete="name">
                     </div>
                     <div>
                         <div><label for="message">Message: </label></div>
                         <textarea name="message" id="message" rows="10" cols="40" placeholder="Message"></textarea>
                     </div>
-                    <button class="custom-btn btn-1">Submit</button>
-                    </div>
-                </form>
+                    <button type="submit" class="custom-btn btn-1" formmethod="post">Submit</button>
+            </div>
+            </form>
             </div>
             <div class="socials">
                 <ul>
-                    <li><a href="https://instagram.com/ig_manassingh/" target="_blank"><img src="Images/ai-generated-instagram-logo-free-png.webp" alt="instagram"></a></li>
+                    <li><a href="https://instagram.com/ig_manassingh/" target="_blank"><img
+                                src="Images/ai-generated-instagram-logo-free-png.webp" alt="instagram"></a></li>
 
-                    <li><a href="https://www.facebook.com/sanam.manas.5030/" target="_blank"><img src="Images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.facebook.com/sanam.manas.5030/" target="_blank"><img
+                                src="Images/facebook.png" alt="facebook"></a></li>
 
-                    <li><a href="https://x.com/themanaskumar" target="_blank"><img src="Images/twitter.webp" alt="twitter/x"></a></li>
+                    <li><a href="https://x.com/themanaskumar" target="_blank"><img src="Images/twitter.webp"
+                                alt="twitter/x"></a></li>
 
-                    <li><a href="https://www.linkedin.com/in/manas-kumar-635ab4256/" target="_blank"><img src="Images/linkedin.png" alt="linkedin"></a></li>
+                    <li><a href="https://www.linkedin.com/in/manas-kumar-635ab4256/" target="_blank"><img
+                                src="Images/linkedin.png" alt="linkedin"></a></li>
 
-                    <li><a href="mailto: themanaskumar1@gmail.com" target="_blank"><img src="Images/gmail.png" alt="email"></a></li>
+                    <li><a href="mailto: themanaskumar1@gmail.com" target="_blank"><img src="Images/gmail.png"
+                                alt="email"></a></li>
                 </ul>
             </div>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+        document.getElementById('messageForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+
+            const response = await fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, message })
+            });
+
+            if (response.ok) {
+                alert('Message saved successfully!');
+            } else {
+                alert('Failed to save message.');
+            }
+        });
+
+        // Typing animation
         var typed = new Typed('#element', {
             strings: ['Data Analyst.', 'Web Developer.'],
             typeSpeed: 50,
         });
     </script>
-    <script src="script.js"></script>
 </body>
+
 </html>

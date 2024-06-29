@@ -1,4 +1,3 @@
-
 document.getElementById('messageForm').addEventListener('submit', async function (event) {
     event.preventDefault();
 
@@ -18,4 +17,9 @@ document.getElementById('messageForm').addEventListener('submit', async function
     } else {
         alert('Failed to save message.');
     }
+});
+// Typing animation
+var typed = new Typed('#element', {
+    strings: ['Data Analyst.', 'Web Developer.'],
+    typeSpeed: 50,
 });
