@@ -216,13 +216,13 @@
                 <form id="messageForm" action="https://formspree.io/f/mqazkzww" method="post">
                     <div>
                         <div><label for="name">Name: </label></div>
-                        <input id="name" type="text" placeholder="Name" name="name" autocomplete="name">
+                        <input id="name" type="text" placeholder="Name" name="name" autocomplete="name" required>
                     </div>
                     <div>
                         <div><label for="message">Message: </label></div>
                         <div><span class="text-gray">(Please do provide some contact info with your message so that I
                                 can contact you after getting your message.)</span></div>
-                        <textarea name="message" id="message" rows="10" cols="40" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" rows="10" cols="40" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="custom-btn btn-1" formmethod="post">Submit</button>
             </div>
