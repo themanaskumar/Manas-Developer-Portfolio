@@ -7,6 +7,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="skillCard.css">
+    <link rel="stylesheet" href="projectCard.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +25,8 @@
             <div class="right">
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experiences</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#academics">Academics</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -47,119 +47,143 @@
         </section>
         <hr>
 
-        <!-- Experience Section -->
-        <section class="experience" id="experience">
-            <span class="text-gray">What I have done so far?</span>
-            <h1><span class="purple">Work</span> Experience</h1>
-
-            <div class="horizontal">
-                <div class="vertical">
-                    <img src="Images/html.png" alt="developer" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">HTML Developer</div> (2010-2012)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illo sed molestiae cumque, vel
-                        ducimus voluptates iusto velit natus neque beatae dolorem nam.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img src="Images/nodejs.png" alt="developer" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">Node.js Developer</div> (2012-2014)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illo sed molestiae cumque, vel
-                        ducimus voluptates iusto velit natus neque beatae dolorem nam.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img src="Images/data-analyst.png" alt="developer" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">Data Analyst</div> (2014-2016)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illo sed molestiae cumque, vel
-                        ducimus voluptates iusto velit natus neque beatae dolorem nam.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img src="Images/database.png" alt="developer" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">DB Executive</div> (2016-2018)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illo sed molestiae cumque, vel
-                        ducimus voluptates iusto velit natus neque beatae dolorem nam.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-
         <!-- Skills Section -->
         <section class="skills" id="skills">
             <span class="text-gray">What skills do I have?</span>
             <h1><span class="purple">My</span> Skills</h1>
-            <div class="horizontal">
-                <div class="vertical">
-                    <img src="Images/html.png" alt="html" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">HTML</div>
+            <div class="cards">
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/html.png" alt=""></span>
+                        <span class="title">HTML</span>
+                    </div>
+                    <div class="lower">
+                        Experienced in structuring web pages using semantic HTML5, ensuring accessibility and SEO-friendly layouts. Skilled in crafting well-organized and maintainable markup.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/css.png" alt="css" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">CSS</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/css.png" alt=""></span>
+                        <span class="title">CSS</span>
+                    </div>
+                    <div class="lower">
+                        Proficient in styling web applications with CSS3, including responsive design, Flexbox, Grid and animations. Capable of designing visually appealing user interfaces.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/js1.png" alt="js" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">JS</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/js1.png" alt=""></span>
+                        <span class="title">JavaScript</span>
+                    </div>
+                    <div class="lower">
+                        Strong understanding of JavaScript ES6+ concepts, including DOM manipulation, event handling, asynchronous programming (Promises, Async/Await), and working with APIs.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/c.png" alt="c" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">C</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/react.png" alt=""></span>
+                        <span class="title">React JS</span>
+                    </div>
+                    <div class="lower">
+                        Skilled in building interactive and scalable web applications using React.js. Experienced in managing state with hooks, Context API, Redux and component-driven development.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/cpp.png" alt="c++" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">C++</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/express.webp" alt=""></span>
+                        <span class="title">Express JS</span>
+                    </div>
+                    <div class="lower">
+                        Experienced in backend development using Express.js, building RESTful APIs, handling middleware, authentication (JWT, OAuth), and integrating databases like MongoDB and MySQL.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/java.png" alt="java" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">Java</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/mongo.png" alt=""></span>
+                        <span class="title">MongoDB</span>
+                    </div>
+                    <div class="lower">
+                        Proficient in working with MongoDB, designing NoSQL databases, writing optimized queries, indexing, and using Mongoose for schema validation in MERN stack applications.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/python.png" alt="python" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">Python</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/sql.png" alt=""></span>
+                        <span class="title">MySQL</span>
+                    </div>
+                    <div class="lower">
+                        Experienced in relational database design, SQL queries, stored procedures, indexing, and working with MySQL for scalable and efficient data storage in web applications.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/dsa.png" alt="dsa" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">DSA</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/java.png" alt=""></span>
+                        <span class="title">Java</span>
+                    </div>
+                    <div class="lower">
+                        Strong foundation in Java programming, including object-oriented programming (OOP), multithreading, exception handling, and Java frameworks like Spring Boot for backend development.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/oops.png" alt="oops" height="45" class="image-top" id="oops">
-                    <div class="vertical-title">
-                        <div class="purple">OOPs</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/c.png" alt=""></span>
+                        <span class="title">C Language</span>
+                    </div>
+                    <div class="lower">
+                        Solid understanding of procedural programming with C, including pointers, memory management, file handling, and data structures like linked lists, stacks, and queues.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="Images/sql.png" alt="my-sql" height="45" class="image-top">
-                    <div class="vertical-title">
-                        <div class="purple">My SQL</div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/cpp.png" alt=""></span>
+                        <span class="title">C++</span>
+                    </div>
+                    <div class="lower">
+                        Skilled in C++ programming, including object-oriented principles, STL (Standard Template Library), and competitive programming concepts like dynamic programming and algorithms.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/python.png" alt=""></span>
+                        <span class="title">Python</span>
+                    </div>
+                    <div class="lower">
+                        Proficient in Python programming for web development, automation, and data science. Experienced with frameworks like Django and Flask, as well as libraries like NumPy and Pandas.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/django.png" alt=""></span>
+                        <span class="title">Django</span>
+                    </div>
+                    <div class="lower">
+                        Experienced in building full-stack web applications using Django, working with ORM, REST APIs, authentication, and deploying Django applications on cloud platforms.
+                    </div>
+                </div><div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/ml.png" alt="" id="ml"></span>
+                        <span class="title">Machine Learning</span>
+                    </div>
+                    <div class="lower">
+                        Knowledgeable in machine learning algorithms, including supervised and unsupervised learning, feature engineering, and working with libraries like Scikit-learn, TensorFlow, and Keras.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/oops.png" alt="" id="oops"></span>
+                        <span class="title">OOPS in C++</span>
+                    </div>
+                    <div class="lower">
+                        Strong grasp of OOP principles in C++, including classes, inheritance, polymorphism, encapsulation, and abstraction, with practical implementations.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="upper">
+                        <span class="image"><img src="Images/dsa.png" alt=""></span>
+                        <span class="title">DSA in Java</span>
+                    </div>
+                    <div class="lower">
+                        Proficient in DSA using Java, including arrays, linked lists, stacks, queues, trees, graphs, sorting/searching algorithms, and problem-solving for competitive coding.
                     </div>
                 </div>
             </div>
@@ -170,13 +194,46 @@
         <section class="projects" id="projects">
             <span class="text-gray">What projects I have worked on?</span>
             <h1><span class="purple">My</span> Projects</h1>
-        </section>
-        <hr>
-
-        <!-- Services Section -->
-        <section class="services" id="services">
-            <span class="text-gray">What services do I offer?</span>
-            <h1><span class="purple">My</span> Services</h1>
+            <div class="projectCards">
+                <div class="leftCards">
+                    <div class="majorCard">
+                        <h3 class="projectTitle">MalScan</h3>
+                        <div class="description"><span class="purple">Description: </span> MalScan is a <span class="purple">Machine Learning</span> based, third year mini project. It allows users to scan any <span class="purple">URL</span> or a <span class="purple">PE File</span> and it will predict whether the given URL or PE File could <span class="purple">Malicious</span> or <span class="purple">Benign.</span> It has two ML models <span class="purple">Random Forest</span> and <span class="purple">LightGBM</span>.</div>
+                        <div class="buttons">
+                            <a target="_blank" href="https://github.com/themanaskumar/MalScan"><button class="custom-btn btn-1">Github</button></a>
+                        </div>
+                    </div>
+                    <div class="majorCard">
+                        <h3 class="projectTitle">Recipe Rover</h3>
+                        <div class="description"><span class="purple">Description: </span> REcipe Rover is a <span class="purple">Full Stack</span> recipe generator web dev project. It allows users to <span class="purple">search recipes </span>based on <span class="purple">available ingredients</span> or by <span class="purple"> name</span>. Users can also save recipes for later. This website is completely made in <span class="purple">MERN Stack</span> and uses <span class="purple">Spoonacular API</span> to fetch recipes.</div>
+                        <div class="buttons">
+                            <a target="_blank" href="https://github.com/themanaskumar/Recipe-Generator"><button class="custom-btn btn-1">GitHub</button></a>
+                        </div>
+                    </div>
+                    <div class="majorCard">
+                        <h3 class="projectTitle">CUSAT Notice</h3>
+                        <div class="description"><span class="purple">Description: </span> CUSAT Notice is also a <span class="purple">full stack</span> website made in <span class="purple">MERN Stack</span> to post and manage <span class="purple">notices & events.</span> Here <span class="purple">faculties and admins</span> can <span class="purple">post & manage</span> notices and events while <span class="purple">students</span> can view them based on different <span class="purple">filters</span>. Admins can also manage students and faculties.</div>
+                        <div class="buttons">
+                            <a target="_blank" href="https://github.com/themanaskumar/Cusat-Notice"><button class="custom-btn btn-1">Github</button></a>
+                        </div>
+                    </div>
+                </div>
+                <h5><span class="purple">Other</span> Projects</h5>
+                <div class="rightCards">
+                    <div class="minorCard">
+                        <div class="projectTitle">My Portfolio</div>
+                        <a href="https://github.com/themanaskumar/Manas-Developer-Portfolio" target="_blank"><button class="custom-btn btn-1">Git</button></a>
+                    </div>
+                    <div class="minorCard">
+                        <div class="projectTitle">Random Quote Generator</div>
+                        <a href="https://themanaskumar.github.io/Random-Quote-Generator/" target="_blank"><button class="custom-btn btn-1">Visit</button></a>
+                    </div>
+                    <div class="minorCard">
+                        <div class="projectTitle">To-Do List</div>
+                        <a href="https://themanaskumar.github.io/To-Do-list/" target="_blank"><button class="custom-btn btn-1">Visit</button></a>
+                    </div>
+                </div>
+            </div>
         </section>
         <hr>
 
@@ -188,13 +245,13 @@
                 <tr class="odd">
                     <td>B.Tech (Computer Science)</td>
                     <td>2022-26</td>
-                    <td>CUSAT</td>
-                    <td>9.00 CGPA</td>
+                    <td>CUSAT, Kochi</td>
+                    <td>9.05 CGPA</td>
                 </tr>
                 <tr class="even">
                     <td>AISSCE/CBSE (Class 12)</td>
                     <td>2021</td>
-                    <td>Chinmaya Vidyalaya, BKSC</td>
+                    <td>Chinmaya Vidyalaya, Bokaro</td>
                     <td>83%</td>
                 </tr>
                 <tr class="odd">
@@ -230,17 +287,18 @@
             </div>
             <div class="socials">
                 <ul>
-                    <li><a href="https://instagram.com/ig_manassingh/" target="_blank"><img src="Images/ai-generated-instagram-logo-free-png.webp" alt="instagram"></a></li>
-
-                    <li><a href="https://www.facebook.com/sanam.manas.5030/" target="_blank"><img src="Images/facebook.png" alt="facebook"></a></li>
-
-                    <li><a href="https://x.com/themanaskumar" target="_blank"><img src="Images/twitter.webp" alt="twitter/x"></a></li>
-
                     <li><a href="https://www.linkedin.com/in/manas-kumar-635ab4256/" target="_blank"><img src="Images/linkedin.png" alt="linkedin"></a></li>
 
                     <li><a href="https://github.com/themanaskumar" target="_blank"><img src="Images/github.png" alt="github"></a></li>
 
                     <li><a href="mailto: themanaskumar1@gmail.com" target="_blank"><img src="Images/gmail.png" alt="email"></a></li>
+
+                    <li><a href="https://x.com/themanaskumar" target="_blank"><img src="Images/twitter.webp" alt="twitter/x"></a></li>
+
+                    <li><a href="https://instagram.com/ig_manassingh/" target="_blank"><img src="Images/ai-generated-instagram-logo-free-png.webp" alt="instagram"></a></li>
+
+                    <li><a href="https://www.facebook.com/sanam.manas.5030/" target="_blank"><img src="Images/facebook.png" alt="facebook"></a></li>
+
                 </ul>
             </div>
         </section>

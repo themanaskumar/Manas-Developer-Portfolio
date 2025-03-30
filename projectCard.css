@@ -1,0 +1,63 @@
+.projectCards .leftCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+.majorCard{
+    width: 20vw;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(176, 176, 176, 0.2);
+    margin: 10px;
+    overflow: hidden;
+    max-height: 45vh;
+}
+.majorCard:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgb(120, 50, 199);
+}
+.projectTitle{
+    background-color: blueviolet;
+    padding: 5px;
+}
+.majorCard .description{
+    font-size: 0.7em;
+    margin: 10px;
+}
+.majorCard .buttons{
+    display: flex;
+    color: white;
+    margin: 5px;
+    justify-content: space-around;
+    margin-right: 75px;
+}
+.majorCard .buttons a{
+    text-decoration: none;
+    color: white;
+}
+.projectCards .rightCards{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.minorCard{
+    border: 1px solid gray;
+    width: 20vw;
+    text-align: center;
+    background-color: rgba(176, 176, 176, 0.2);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.minorCard:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgb(120, 50, 199);
+}
+.minorCard button{
+    margin: 9px 0;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+}

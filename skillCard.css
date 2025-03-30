@@ -1,0 +1,40 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 14vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    justify-content: center;
+    background-color: rgba(176, 176, 176, 0.2);
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgb(120, 50, 199);
+}
+
+.card .upper{
+    display: flex;
+    gap: 10px;
+    padding: 3%;
+    background-color: rgb(61, 9, 120);
+}
+.card .upper .title{
+    font-size: 14px;
+}
+.card .upper .image img{
+    height: 15px;
+}
+.card .upper .title{
+    display: flex;
+    align-items: center;
+}
+.card .lower{
+    font-size: 10px;
+    padding: 5%;
+    font-weight: 150;
+}

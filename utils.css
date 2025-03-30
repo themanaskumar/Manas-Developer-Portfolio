@@ -41,7 +41,6 @@
     font-size: 0.6rem;
     color: gray;
 }
-
 main hr {
     border: 0;
     background: rgb(120, 50, 199);
@@ -56,6 +55,15 @@ main hr {
     padding-top: 38px;
 }
 
+.skills{
+  height: 85vh;
+}
+
+/* cards */
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
 /* Scrollbar Design */
 /* width */
 ::-webkit-scrollbar {
