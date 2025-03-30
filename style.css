@@ -147,67 +147,48 @@ nav ul li a:hover{
     .rightSection img{
         width: 100%;
     }
-    .experience .horizontal {
-        display: block;
-        width: 2px;
-        height: 40vh;
-        margin-left: 20px;
+    .skills {
+        min-height: 135vh;
     }
-    .experience .vertical {
-        width: 40px;
-        height: 1px;
-        margin: 100px 0;
-      }
-      .experience .image-top{
-        height: 33px;
-        position: relative;
-        top: -15px;
-        left: -40px;
+    .skills .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-    .experience .vertical-title{
-        font-size: 13px;
-        top: -55px;
-        left: 44px;
+    .skills .cards .card{
+        min-width: 37vw;
     }
-    .experience .vertical-desc{
-        top: -105px;
-        left: 153px;
-        width: 130px;
+
+    .projects{
+        min-height: 105vh;
     }
-    .skills .horizontal {
-        display: block;
-        width: 2px;
-        height: 55vh;
-        margin-left: 80px;
+    .projectCards .leftCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .skills .vertical {
-        width: 40px;
-        height: 1px;
-        margin: 50px 0;
+    .projectCards .leftCards .majorCard{
+        min-width: 70vw;
+        margin: 10px 10px;
     }
-    .skills .image-top{
-        height: 33px;
-        top: -15px;
-        left: -60px;
+    .contactSection .socials ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        min-width: 90vw;
+        gap: 6vw;
     }
-    .skills .vertical-title{
-        font-size: 13px;
-        top: -46px;
-        left: 44px;
-    }
-    .academics table{
-        width: 100%;
-        margin: 25px 0;
-        height: 72%;
-        font-size: 0.8rem;
-    }
-    .academics, .contactSection, .experience, .skills, .projects, .services{
-        margin: 20px 0;
-    }
-    .contactSection .socials ul  li{
-        margin: 0 21px;
+    .contactSection .socials ul li{
+        margin: 0px 0px;
     }
     .contactSection form input, textarea{
         width: 90%;
+    }
+  }
+  @media only screen and (max-height:640px){
+    .skills, .projects{
+        min-height: 80vh;
     }
   }

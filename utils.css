@@ -97,10 +97,4 @@ main hr {
     main hr{
       margin: 20px;
     }
-    .experience, .services, .projects, .academics, .skills {
-      max-width: 80vw;
-      margin: auto;
-      height: 70vh;
-      padding-top: 5px;
-  }
   }
