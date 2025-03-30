@@ -51,7 +51,7 @@ main hr {
 .experience, .services, .projects, .academics, .skills, .contactSection {
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    height: 70vh;
     padding-top: 38px;
 }
 
