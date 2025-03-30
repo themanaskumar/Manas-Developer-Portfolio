@@ -55,10 +55,6 @@ main hr {
     padding-top: 38px;
 }
 
-.skills{
-  height: 85vh;
-}
-
 /* cards */
 .cards{
   display: flex;
