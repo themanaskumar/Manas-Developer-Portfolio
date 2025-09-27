@@ -14,7 +14,7 @@ body {
 nav{
     display: flex;
     font-size: small;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     height: 45px;
     background-color: #110d42;
