@@ -6,8 +6,8 @@
 body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    background: #030020;
-    color: white;
+    background: white;
+    color: rgb(101, 101, 101);
 }
 
 /* Navigation Bar */
@@ -17,7 +17,7 @@ nav{
     justify-content:space-around;
     align-items: center;
     height: 45px;
-    background-color: #110d42;
+    background-color: #f7f7f7;
     position: fixed;
     top: 0;
     width: 100%;
@@ -34,10 +34,10 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 nav ul li a:hover{
-    color: rgb(120, 50, 199);
+    color: rgb(101, 101, 101);
 }
 .left {
     font-size: 1.8rem;
@@ -54,15 +54,15 @@ nav ul li a:hover{
     width: 30%;
 }
 .leftSection{
-    /* background-color: red; */
     font-size: 2rem;
     margin: 40px 0;
+    color: rgb(101, 101, 101);
 }
 .rightSection img{
     width: 90%;
     /* filter: drop-shadow(5px 5px 50px rgb(120, 50, 199)); */
     box-shadow: 0px 0px 20px #000000;
-    background: #110d42;
+    background: #f7f7f7;
     border-radius: 50%;
 }
 
@@ -77,10 +77,13 @@ nav ul li a:hover{
     padding: 2px 10px;
     background-color: transparent;
     color: white;
-    border: 2px solid #110d42;
+    border: 2px solid #7b7b7b;
     border-radius: 5px;
     margin: 5px 0;
     width: 450px;
+}
+.contactSection form button{
+    font-weight: 600;
 }
 .socials{
     height: 40px;
@@ -97,7 +100,7 @@ nav ul li a:hover{
     width: 35px;
 }
 .socials img:hover{
-    filter: drop-shadow(0px 0px 4px rgb(120, 50, 199));
+    filter: drop-shadow(0px 0px 5px rgb(149, 149, 149));
 }
 
 /* Academics Section  */
@@ -110,24 +113,21 @@ nav ul li a:hover{
     text-align: center;
 }
 .academics table, td{
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(101, 101, 101);
 }
 
 .even {
-    background: #310b6b;
+    background: #efefef;
 }
 .odd {
-    background: #4e13a7;
+    background: #fbfbfb;
 }
 
 .academics a{
-    color: white;
+    color: rgb(101, 101, 101);
     text-decoration: none;
 }
 
-#oops, #ml{
-    filter: invert(100%);
-}
 
   /* Responsive */
   @media only screen and (max-width: 750px){

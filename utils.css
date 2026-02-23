@@ -2,7 +2,7 @@
 {
     width: 80px;
     height: 30px;
-    color: #fff;
+    color: black;
     border-radius: 8px;
     padding: 4px 8px;
     font-weight: 100;
@@ -18,32 +18,32 @@
 }
 
 .btn-1{
-    background: rgb(61, 9, 120);
-    background: linear-gradient(0deg, rgba(141, 55, 245) 0%, rgb(43, 4, 87) 100%);
+    background: rgb(99, 99, 99);
+    background: linear-gradient(0deg, rgb(232, 232, 232) 0%, rgb(176, 176, 176) 100%);
     border: none;
 }
 .btn-1:hover{
-    background: rgb(61, 9, 120);
-    background: linear-gradient(0deg, rgb(43, 4, 87) 0%, rgb(141, 55, 245) 100%);
+    background: rgb(99, 99, 99);
+    background: linear-gradient(0deg, rgb(176, 176, 176) 0%, rgb(232, 232, 232) 100%);
 }
 
 
 .purple{
-    color: rgb(120, 50, 199);
+    color: black;
     font-weight: 800;
 }
 
 #element{
-    color: rgb(120, 50, 199);
+    color: black;
 }
 
 .text-gray {
     font-size: 0.6rem;
-    color: gray;
+    color: black;
 }
 main hr {
     border: 0;
-    background: rgb(120, 50, 199);
+    background: rgb(101, 101, 101);
     height: 1px;
     margin: 20px 50px;
 }
@@ -61,38 +61,6 @@ main hr {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* Scrollbar Design */
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #8d83fc;
-    border-radius: 2px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #191359;
-    border-radius: 2px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #030020;
-    cursor: grab;
-  }
-  ::-webkit-scrollbar-button{
-    background: #191359;
-  }
-  ::-webkit-scrollbar-button:hover{
-    background: #030020;
-  }
-  ::-webkit-scrollbar-corner {
-    background: #8d83fc;
-  }
   @media only screen and (max-width: 750px) {
     main hr{
       margin: 20px;

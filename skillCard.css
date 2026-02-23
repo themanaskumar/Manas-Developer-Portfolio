@@ -1,5 +1,5 @@
 .card{
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid #f7f7f7;
     border-radius: 10px;
     max-width: 14vw;
     margin-top: 10px;
@@ -10,14 +10,14 @@
 
 .card:hover{
     transform: scale(1.02);
-    box-shadow: 0px 0px 10px rgb(120, 50, 199);
+    box-shadow: 0px 0px 10px rgb(149, 149, 149);
 }
 
 .card .upper{
     display: flex;
     gap: 10px;
     padding: 3%;
-    background-color: rgb(61, 9, 120);
+    background-color: #f7f7f7;
 }
 .card .upper .title{
     font-size: 14px;
@@ -30,7 +30,9 @@
     align-items: center;
 }
 .card .lower{
-    font-size: 10px;
+    font-size: 12px;
     padding: 5%;
     font-weight: 150;
+    background-color: white;
+    color: black;
 }
