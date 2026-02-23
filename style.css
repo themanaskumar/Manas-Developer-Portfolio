@@ -120,6 +120,11 @@ nav ul li a:hover{
     background: #4e13a7;
 }
 
+.academics a{
+    color: white;
+    text-decoration: none;
+}
+
 #oops, #ml{
     filter: invert(100%);
 }
