@@ -75,7 +75,7 @@ nav ul li a:hover{
     padding: 20px 0;
 }
 
-/* Two-Row Scrolling Grid */
+/* Two-Row Scrolling Grid (Desktop) */
 .skills .cards {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -226,14 +226,21 @@ nav ul li a:hover{
     .skills-wrapper { width: 95%; }
     
     .skills .cards {
-        grid-template-rows: 1fr; 
-        grid-auto-columns: 280px; 
-        gap: 15px;
+        display: flex; /* Switch to flexbox for the mobile scroller */
+        flex-direction: row;
+        flex-wrap: nowrap; /* Forces them into a single line */
+        overflow-x: auto;
+        gap: 20px;
         padding: 10px 0;
+        scroll-snap-type: x mandatory; 
     }
+    
     .skills .cards .card {
-        width: 100%; 
+        flex: 0 0 280px; /* Do not grow, do not shrink, stay exactly 280px */
+        width: 280px !important; 
+        min-width: 280px !important; /* Forces it to override skillCard.css */
         min-height: 180px;
+        scroll-snap-align: center; /* Snaps the card to the center when swiping */
     }
     
     .left-btn { left: -10px; }
