@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- CSS Files -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="skillCard.css">
     <link rel="stylesheet" href="projectCard.css">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -35,7 +33,6 @@
         </nav>
     </header>
     <main>
-        <!-- About Section -->
         <section class="about" id="about">
             <div class="leftSection">
                 Hi! My name is <span class="purple">Manas Kumar,</span>
@@ -48,150 +45,154 @@
         </section>
         <hr>
 
-        <!-- Skills Section -->
         <section class="skills" id="skills">
             <span class="text-gray">What skills do I have?</span>
             <h1><span class="purple">My</span> Skills</h1>
-            <div class="cards">
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/html.png" alt=""></span>
-                        <span class="title">HTML</span>
+            
+            <div class="skills-wrapper">
+                <button class="scroll-btn left-btn" id="scrollLeftBtn">&#10094;</button>
+                <div class="cards" id="skillsContainer">
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/html.png" alt=""></span>
+                            <span class="title">HTML</span>
+                        </div>
+                        <div class="lower">
+                            Experienced in structuring web pages using semantic HTML5, ensuring accessibility and SEO-friendly layouts. Skilled in crafting well-organized and maintainable markup.
+                        </div>
                     </div>
-                    <div class="lower">
-                        Experienced in structuring web pages using semantic HTML5, ensuring accessibility and SEO-friendly layouts. Skilled in crafting well-organized and maintainable markup.
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/css.png" alt=""></span>
+                            <span class="title">CSS</span>
+                        </div>
+                        <div class="lower">
+                            Proficient in styling web applications with CSS3, including responsive design, Flexbox, Grid, and animations. Capable of designing visually appealing user interfaces.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/js1.png" alt=""></span>
+                            <span class="title">JavaScript</span>
+                        </div>
+                        <div class="lower">
+                            Strong understanding of JavaScript ES6+ concepts, including DOM manipulation, event handling, asynchronous programming (Promises, Async/Await), and working with APIs.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/react.png" alt=""></span>
+                            <span class="title">React JS</span>
+                        </div>
+                        <div class="lower">
+                            Skilled in building interactive and scalable web applications using React.js. Experienced in managing state with hooks, Context API, Redux, and component-driven development.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/express.webp" alt=""></span>
+                            <span class="title">Express JS</span>
+                        </div>
+                        <div class="lower">
+                            Experienced in backend development using Express.js, building RESTful APIs, handling middleware, authentication (JWT, OAuth), and integrating databases like MongoDB and MySQL.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/mongo.png" alt=""></span>
+                            <span class="title">MongoDB</span>
+                        </div>
+                        <div class="lower">
+                            Proficient in working with MongoDB, designing NoSQL databases, writing optimized queries, indexing, and using Mongoose for schema validation in MERN stack applications.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/sql.png" alt=""></span>
+                            <span class="title">MySQL</span>
+                        </div>
+                        <div class="lower">
+                            Experienced in relational database design, SQL queries, stored procedures, indexing, and working with MySQL for scalable and efficient data storage in web applications.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/java.png" alt=""></span>
+                            <span class="title">Java</span>
+                        </div>
+                        <div class="lower">
+                            Strong foundation in Java programming, including object-oriented programming (OOP), multithreading, exception handling, and Java frameworks like Spring Boot for backend development.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/c.png" alt=""></span>
+                            <span class="title">C Language</span>
+                        </div>
+                        <div class="lower">
+                            Solid understanding of procedural programming with C, including pointers, memory management, file handling, and data structures like linked lists, stacks, and queues.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/cpp.png" alt=""></span>
+                            <span class="title">C++</span>
+                        </div>
+                        <div class="lower">
+                            Skilled in C++ programming, including object-oriented principles, STL (Standard Template Library), and competitive programming concepts like dynamic programming and algorithms.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/python.png" alt=""></span>
+                            <span class="title">Python</span>
+                        </div>
+                        <div class="lower">
+                            Proficient in Python programming for web development, automation, and data science. Experienced with frameworks like Django and Flask, as well as libraries like NumPy and Pandas.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/django.png" alt=""></span>
+                            <span class="title">Django</span>
+                        </div>
+                        <div class="lower">
+                            Experienced in building full-stack web applications using Django, working with ORM, REST APIs, authentication, and deploying Django applications on cloud platforms.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/ml.png" alt="" id="ml"></span>
+                            <span class="title">Machine Learning</span>
+                        </div>
+                        <div class="lower">
+                            Knowledgeable in machine learning algorithms, including supervised and unsupervised learning, feature engineering, and working with libraries like Scikit-learn, TensorFlow, and Keras.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/oops.png" alt="" id="oops"></span>
+                            <span class="title">OOPS in C++</span>
+                        </div>
+                        <div class="lower">
+                            Strong grasp of OOP principles in C++, including classes, inheritance, polymorphism, encapsulation, and abstraction, with practical implementations.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="upper">
+                            <span class="image"><img src="Images/dsa.png" alt=""></span>
+                            <span class="title">DSA in Java</span>
+                        </div>
+                        <div class="lower">
+                            Proficient in DSA using Java, including arrays, linked lists, stacks, queues, trees, graphs, sorting/searching algorithms, and problem-solving for competitive coding.
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/css.png" alt=""></span>
-                        <span class="title">CSS</span>
-                    </div>
-                    <div class="lower">
-                        Proficient in styling web applications with CSS3, including responsive design, Flexbox, Grid, and animations. Capable of designing visually appealing user interfaces.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/js1.png" alt=""></span>
-                        <span class="title">JavaScript</span>
-                    </div>
-                    <div class="lower">
-                        Strong understanding of JavaScript ES6+ concepts, including DOM manipulation, event handling, asynchronous programming (Promises, Async/Await), and working with APIs.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/react.png" alt=""></span>
-                        <span class="title">React JS</span>
-                    </div>
-                    <div class="lower">
-                        Skilled in building interactive and scalable web applications using React.js. Experienced in managing state with hooks, Context API, Redux, and component-driven development.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/express.webp" alt=""></span>
-                        <span class="title">Express JS</span>
-                    </div>
-                    <div class="lower">
-                        Experienced in backend development using Express.js, building RESTful APIs, handling middleware, authentication (JWT, OAuth), and integrating databases like MongoDB and MySQL.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/mongo.png" alt=""></span>
-                        <span class="title">MongoDB</span>
-                    </div>
-                    <div class="lower">
-                        Proficient in working with MongoDB, designing NoSQL databases, writing optimized queries, indexing, and using Mongoose for schema validation in MERN stack applications.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/sql.png" alt=""></span>
-                        <span class="title">MySQL</span>
-                    </div>
-                    <div class="lower">
-                        Experienced in relational database design, SQL queries, stored procedures, indexing, and working with MySQL for scalable and efficient data storage in web applications.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/java.png" alt=""></span>
-                        <span class="title">Java</span>
-                    </div>
-                    <div class="lower">
-                        Strong foundation in Java programming, including object-oriented programming (OOP), multithreading, exception handling, and Java frameworks like Spring Boot for backend development.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/c.png" alt=""></span>
-                        <span class="title">C Language</span>
-                    </div>
-                    <div class="lower">
-                        Solid understanding of procedural programming with C, including pointers, memory management, file handling, and data structures like linked lists, stacks, and queues.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/cpp.png" alt=""></span>
-                        <span class="title">C++</span>
-                    </div>
-                    <div class="lower">
-                        Skilled in C++ programming, including object-oriented principles, STL (Standard Template Library), and competitive programming concepts like dynamic programming and algorithms.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/python.png" alt=""></span>
-                        <span class="title">Python</span>
-                    </div>
-                    <div class="lower">
-                        Proficient in Python programming for web development, automation, and data science. Experienced with frameworks like Django and Flask, as well as libraries like NumPy and Pandas.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/django.png" alt=""></span>
-                        <span class="title">Django</span>
-                    </div>
-                    <div class="lower">
-                        Experienced in building full-stack web applications using Django, working with ORM, REST APIs, authentication, and deploying Django applications on cloud platforms.
-                    </div>
-                </div><div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/ml.png" alt="" id="ml"></span>
-                        <span class="title">Machine Learning</span>
-                    </div>
-                    <div class="lower">
-                        Knowledgeable in machine learning algorithms, including supervised and unsupervised learning, feature engineering, and working with libraries like Scikit-learn, TensorFlow, and Keras.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/oops.png" alt="" id="oops"></span>
-                        <span class="title">OOPS in C++</span>
-                    </div>
-                    <div class="lower">
-                        Strong grasp of OOP principles in C++, including classes, inheritance, polymorphism, encapsulation, and abstraction, with practical implementations.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="upper">
-                        <span class="image"><img src="Images/dsa.png" alt=""></span>
-                        <span class="title">DSA in Java</span>
-                    </div>
-                    <div class="lower">
-                        Proficient in DSA using Java, including arrays, linked lists, stacks, queues, trees, graphs, sorting/searching algorithms, and problem-solving for competitive coding.
-                    </div>
-                </div>
+                <button class="scroll-btn right-btn" id="scrollRightBtn">&#10095;</button>
             </div>
         </section>
         <hr>
 
-        <!-- Experience Section -->
         <section class="academics" id="academics">
             <span class="text-gray">What is my real world experience?</span>
             <h1><span class="purple">My</span> Experience</h1>
@@ -212,7 +213,6 @@
         </section>
         <hr>
 
-        <!-- Projects Section -->
         <section class="projects" id="projects">
             <span class="text-gray">What projects I have worked on?</span>
             <h1><span class="purple">My</span> Projects</h1>
@@ -220,21 +220,21 @@
                 <div class="leftCards">
                     <div class="majorCard">
                         <h3 class="projectTitle">MalScan</h3>
-                        <div class="description"><span class="purple">Description: </span> MalScan is a <span class="purple">Machine Learning-based</span>, third-year mini-project. It allows users to scan any <span class="purple">URL</span> or <span class="purple">PE File</span> and predicts whether the given input could be <span class="purple">Malicious</span> or <span class="purple">Benign.</span> It utilizes two ML models: <span class="purple">Random Forest</span> and <span class="purple">LightGBM</span>.</div>
+                        <div class="description"><span class="purple">Description: </span> MalScan is a <span class="purple">machine learning-based</span>, third-year mini-project. It allows users to scan any <span class="purple">URL</span> or <span class="purple">PE file</span> and predicts whether the given input could be <span class="purple">malicious</span> or <span class="purple">benign.</span> It utilizes two ML models: <span class="purple">Random Forest</span> and <span class="purple">LightGBM</span>.</div>
                         <div class="buttons">
                             <a target="_blank" href="https://github.com/themanaskumar/MalScan"><button class="custom-btn btn-1">Github</button></a>
                         </div>
                     </div>
                     <div class="majorCard">
                         <h3 class="projectTitle">Recipe Rover</h3>
-                        <div class="description"><span class="purple">Description: </span> Recipe Rover is a <span class="purple">full-stack</span> recipe generator web application. It allows users to <span class="purple">search for recipes </span>based on <span class="purple">available ingredients</span> or by <span class="purple"> name</span>. Users can also save recipes for later. This website is built entirely on the <span class="purple">MERN Stack</span> and uses the <span class="purple">Spoonacular API</span> to fetch recipes.</div>
+                        <div class="description"><span class="purple">Description: </span> Recipe Rover is a <span class="purple">full-stack</span> recipe generator web application. It allows users to <span class="purple">search for recipes </span>based on <span class="purple">available ingredients</span> or by <span class="purple">name</span>. Users can also save recipes for later. This website is built entirely on the <span class="purple">MERN stack</span> and uses the <span class="purple">Spoonacular API</span> to fetch recipes.</div>
                         <div class="buttons">
                             <a target="_blank" href="https://github.com/themanaskumar/Recipe-Generator"><button class="custom-btn btn-1">Github</button></a>
                         </div>
                     </div>
                     <div class="majorCard">
                         <h3 class="projectTitle">CUSAT Notice</h3>
-                        <div class="description"><span class="purple">Description: </span> CUSAT Notice is also a <span class="purple">full stack</span> website made in <span class="purple">MERN Stack</span> to post and manage <span class="purple">notices & events.</span> Here <span class="purple">faculties and admins</span> can <span class="purple">post & manage</span> notices and events while <span class="purple">students</span> can view them based on different <span class="purple">filters</span>. Admins can also manage students and faculties.</div>
+                        <div class="description"><span class="purple">Description: </span> CUSAT Notice is a <span class="purple">full-stack</span> website built with the <span class="purple">MERN stack</span> to post and manage <span class="purple">notices and events.</span> Here, <span class="purple">faculty and admins</span> can <span class="purple">post and manage</span> notices and events, while <span class="purple">students</span> can view them using different <span class="purple">filters</span>. Admins can also manage student and faculty accounts.</div>
                         <div class="buttons">
                             <a target="_blank" href="https://github.com/themanaskumar/Cusat-Notice"><button class="custom-btn btn-1">Github</button></a>
                         </div>
@@ -259,7 +259,6 @@
         </section>
         <hr>
 
-        <!-- Work In Progress Section -->
         <section class="academics" id="academics">
             <span class="text-gray">What am I working on right now?</span>
             <h1><span class="purple">Work</span> In Progress</h1>
@@ -268,7 +267,6 @@
         </section>
         <hr>
 
-        <!-- Academics Section -->
         <section class="academics" id="academics">
             <span class="text-gray">What are my academic achievements?</span>
             <h1><span class="purple">My</span> Academics</h1>
@@ -295,7 +293,6 @@
         </section>
         <hr>
 
-        <!-- Contact Section -->
         <section class="contactSection" id="contact">
             <div class="form">
                 <div>
@@ -307,7 +304,7 @@
                         <input id="name" type="text" placeholder="Name" name="name" autocomplete="name" required>
                     </div>
                     <div>
-                        <div><label for="name">Contact info: </label></div>
+                        <div><label for="contact">Contact info: </label></div>
                         <input id="contact" type="text" placeholder="Contact Information" name="contact" required>
                     </div>
                     <div>
@@ -316,8 +313,7 @@
                         <textarea name="message" id="message" rows="10" cols="40" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="custom-btn btn-1" formmethod="post">Submit</button>
-            </div>
-            </form>
+                </form>
             </div>
             <div class="socials">
                 <ul>
@@ -334,10 +330,24 @@
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        // Typing animation
         var typed = new Typed('#element', {
             strings: ['Web Developer,', 'ML Engineer.'],
             typeSpeed: 80,
+        });
+    </script>
+    <script>
+        const skillsContainer = document.getElementById('skillsContainer');
+        const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+        const scrollRightBtn = document.getElementById('scrollRightBtn');
+
+        const scrollAmount = 345; 
+
+        scrollLeftBtn.addEventListener('click', () => {
+            skillsContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            skillsContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
     </script>
 </body>

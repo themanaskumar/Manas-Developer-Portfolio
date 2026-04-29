@@ -10,7 +10,6 @@ body {
     color: rgb(101, 101, 101);
 }
 
-/* Navigation Bar */
 nav{
     display: flex;
     font-size: small;
@@ -43,7 +42,6 @@ nav ul li a:hover{
     font-size: 1.8rem;
 }
 
-/* About Section */
 .about {
     display: flex;
     justify-content: space-around;
@@ -60,13 +58,72 @@ nav ul li a:hover{
 }
 .rightSection img{
     width: 90%;
-    /* filter: drop-shadow(5px 5px 50px rgb(120, 50, 199)); */
     box-shadow: 0px 0px 20px #000000;
     background: #f7f7f7;
     border-radius: 50%;
 }
 
-/* Contact Section  */
+.skills-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.skills .cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    width: 100%;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.skills .cards::-webkit-scrollbar {
+    display: none; 
+}
+
+.skills .cards .card {
+    width: 320px;
+    min-height: 150px; 
+}
+
+.scroll-btn {
+    background-color: #656565;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    z-index: 10;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-btn:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+}
+
+.left-btn {
+    left: -20px;
+}
+
+.right-btn {
+    right: -20px;
+}
+
 .contactSection {
     display: flex;
     flex-direction: column;
@@ -103,7 +160,6 @@ nav ul li a:hover{
     filter: drop-shadow(0px 0px 5px rgb(149, 149, 149));
 }
 
-/* Academics Section  */
 .academics table{
     width: 90%;
     table-layout: auto;
@@ -128,9 +184,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-
-  /* Responsive */
-  @media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px){
     body{
         max-width: 100%;
     }
@@ -155,14 +209,21 @@ nav ul li a:hover{
     .skills {
         min-height: 135vh;
     }
-    .skills .cards{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    .skills-wrapper {
+        width: 85%;
     }
-    .skills .cards .card{
-        min-width: 37vw;
+    .skills .cards {
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .skills .cards .card {
+        width: 260px;
+    }
+    .left-btn {
+        left: -15px;
+    }
+    .right-btn {
+        right: -15px;
     }
 
     .projects{
@@ -191,4 +252,4 @@ nav ul li a:hover{
     .contactSection form input, textarea{
         width: 90%;
     }
-  }
+}
