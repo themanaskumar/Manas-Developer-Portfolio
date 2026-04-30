@@ -1,4 +1,4 @@
-.card{
+.card {
     border: 2px solid #f7f7f7;
     border-radius: 10px;
     max-width: 14vw;
@@ -8,28 +8,29 @@
     background-color: rgba(176, 176, 176, 0.2);
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.02);
     box-shadow: 0px 0px 10px rgb(149, 149, 149);
 }
 
-.card .upper{
+.card .upper {
     display: flex;
     gap: 10px;
     padding: 3%;
     background-color: #f7f7f7;
 }
-.card .upper .title{
-    font-size: 14px;
-}
-.card .upper .image img{
+
+.card .upper .image img {
     height: 15px;
 }
-.card .upper .title{
+
+.card .upper .title {
+    font-size: 14px;
     display: flex;
     align-items: center;
 }
-.card .lower{
+
+.card .lower {
     font-size: 12px;
     padding: 5%;
     font-weight: 150;

@@ -1,5 +1,4 @@
-.custom-btn
-{
+.custom-btn {
     width: 80px;
     height: 30px;
     color: black;
@@ -17,23 +16,23 @@
     outline: none;
 }
 
-.btn-1{
+.btn-1 {
     background: rgb(99, 99, 99);
     background: linear-gradient(0deg, rgb(232, 232, 232) 0%, rgb(176, 176, 176) 100%);
     border: none;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background: rgb(99, 99, 99);
     background: linear-gradient(0deg, rgb(176, 176, 176) 0%, rgb(232, 232, 232) 100%);
 }
 
-
-.purple{
+.purple {
     color: black;
     font-weight: 800;
 }
 
-#element{
+#element {
     color: black;
 }
 
@@ -41,6 +40,7 @@
     font-size: 0.6rem;
     color: black;
 }
+
 main hr {
     border: 0;
     background: rgb(101, 101, 101);
@@ -48,21 +48,92 @@ main hr {
     margin: 20px 50px;
 }
 
+/* FIX: Changed height to min-height so content can expand without overlapping */
 .experience, .services, .projects, .academics, .skills, .contactSection {
     max-width: 80vw;
     margin: auto;
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
     padding-top: 38px;
 }
 
-/* cards */
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* Generic Slider Wrapper */
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Prevents blowout */
+    min-width: 0; /* Forces flexbox to respect parent width */
+    margin: 10px auto;
 }
-  @media only screen and (max-width: 750px) {
-    main hr{
-      margin: 20px;
+
+/* Projects Desktop Horizontal Scroll */
+.projectCards .leftCards,
+.projectCards .rightCards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 25px;
+    padding: 15px 10px; /* Added 10px side padding so card drop-shadows aren't clipped */
+    width: 100%;
+    max-width: 100%; /* Prevents blowout */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.projectCards .leftCards::-webkit-scrollbar,
+.projectCards .rightCards::-webkit-scrollbar {
+    display: none; 
+}
+
+/* Prevent cards from shrinking on desktop */
+.projectCards .majorCard,
+.projectCards .minorCard {
+    flex: 0 0 350px; /* Adjust this if your cards feel too wide/narrow */
+    max-width: 350px;
+}
+
+.projects h5 {
+    margin: 30px 0 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 750px) {
+    main hr {
+        margin: 20px;
     }
-  }
+
+    .slider-wrapper {
+        width: 95%;
+    }
+
+    /* Convert Project Card sections to Mobile Horizontal Scrollers */
+    .projectCards .leftCards,
+    .projectCards .rightCards {
+        scroll-snap-type: x mandatory; /* Makes swiping snap to the cards */
+        padding: 15px 0;
+    }
+
+    /* Standardize the card sizes inside the horizontal scroll */
+    .projectCards .majorCard, 
+    .projectCards .minorCard {
+        flex: 0 0 85vw !important; /* Each card takes up 85% of screen width */
+        width: 85vw !important;
+        max-width: 85vw !important;
+        min-width: 85vw !important;
+        margin: 0 !important; /* Removes vertical margin to align correctly */
+        scroll-snap-align: center; /* Snaps exactly to the center when swiped */
+    }
+}
